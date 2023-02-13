@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Portofolio Tania</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="sectionHome">
+        <div class="bg">
+            
+            <nav class="navbar">
+                <a class="link" href="#">Fristania Verenita</a>
+                <div class="dlm">
+                <a class="link" href="#sectionAboutMe" class="about">About Me</a>
+                <a class="link" href="#" class="porto">Portofolio</a>
+                <a class="link" ref="#" class="contact">Contact</a>
+            </div>
+            </nav>
+
+            <div class="hero">
+                <div class="title">
+                    <h1 id="hero-title"></h1>
+                    <h3>I am Student at Bina Nusantara University</h3>
+                </div>
+                <a href="#sectionAboutMe" class="sectionAboutMe">Let's Go</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionAboutMe">
+        <h2>About Me</h2>
+        <div class="aboutMe">
+            <img src="Tania.jpg" alt="Picture">
+
+            <div class="allDesc">
+                <p class="myDesc">I am currently enrolled as a first-year at Binus University, majoring in Information Systems. Enthusiastic in technology, business, design, and the pursuit of the growth mindset.
+
+                    This year, I also contributed to a student activity unit as an activist. I have already developed many skills in the university and organization, be it teamwork, leadership, public speaking, Java programming, UI design, etc.
+                    
+                    I believe that the skills that I have developed in my current environment could be used when I'm in the professional world. I am looking forward to continuing to develop my skills and knowledge.</p>
+
+                <div class="educationTable">
+                    <table>
+                        <tr>
+                            <td class="year">Years</td>
+                            <td class="desc">Description</td>
+                        </tr>
+                        <tr>
+                            <td>2021-2025</td>
+                            <td>Bina Nusantara University</td>
+                        </tr>
+                        <tr>
+                            <td>2018-2021</td>
+                            <td>Saint Joseph High School</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="softwareAndLangList">
+                    <div class="progLang">
+                        <span>Mastered Programming Language</span>
+                        <ul>
+                            <li>Java</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="software">
+                        <span>Mastered Software</span>
+                        <ul>
+                            <li>Eclipse</li>
+                            <li>Visual Studio Code</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="sectionPortofolio">
+            <h3>PORTOFOLIO</h3>
+
+            <div class="gridItem">
+                <div class="porto1">
+                    <img src="porto1.jpg" alt="Porto1">
+                    <h4>Portofolio 1</h4>
+                    <h4>Java</h4>
+                    <div class="btn-ahref">
+                        <a href="">CHECK</a>
+                    </div>
+                </div>
+                <div class="porto2">
+                    <img src="porto2.jpg" alt="Porto2">
+                    <h4>Portofolio 2</h4>
+                    <h4>Java</h4>
+                    <div class="btn-ahref">
+                        <a href="">CHECK</a>
+                    </div>
+                </div>
+                <div class="porto3">
+                    <img src="porto3.jpg" alt="Porto3">
+                    <h4>Portofolio 3</h4>
+                    <h4>Java</h4>
+                    <div class="btn-ahref">
+                        <a href="">CHECK</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script>
+var text = document.querySelector(".title h1");
+var textArray = ["Hello, Welcome to my portfolio!", "Fristania Verenita"];
+var animationSpeed = 100;
+var textIndex = 0;
+var letterIndex = 0;
+
+function type() {
+
+  if (letterIndex < textArray[textIndex].length) {
+    text.innerHTML += textArray[textIndex].charAt(letterIndex);
+    letterIndex++;
+    setTimeout(type, animationSpeed);
+  } else {
+    letterIndex = 0;
+    textIndex++;
+    if (textIndex >= textArray.length) {
+      textIndex = 0;
+    }
+    text.innerHTML = "";
+    setTimeout(type, animationSpeed);
+  }
+}
+setTimeout(type, 2000);
+</script>
+</body>
+</html>
